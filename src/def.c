@@ -8,7 +8,10 @@ int sum1(int count, ...){
         res += va_arg(n, int);
     }
     va_end(n);
-    return res / count;
+    if(count != 0){
+        return res / count;
+    }
+    else{return 0;};
 }
 
 int sum2(int *start){
@@ -20,7 +23,7 @@ int sum2(int *start){
 }
 
 double def1(double x, double y, double z){
-    double t = ((x * y * z) - (y * abs((x + sqrt(z))))) / (pow(10, 7) + pow((log(4)), 0.25));
+    double t = ((x * y * z) - (y * abs((x + sqrt(z))))) / (pow(10, 7) + pow((log10(4)), 0.25));
     return t;
 }
 
@@ -36,8 +39,16 @@ double def3(double x, double y, double z, double (*def)(double x, double y, doub
 void def4(){
     int arr[20];
 
-    int *arr1 = &arr[0];
-    int *arr2 = &arr[10];
+    int ar1[10];
+    int ar2[10];
+
+    int *arr2 = &arr[0];
+    int *arr1 = &arr[10];
+
+    arr1 = &ar1[0];
+    arr2 = &ar2[0];
+
+    printf("%p   %p\n", ar1, ar2);
 
     for (int i = 0; i < 10; i++) {
         arr1[i] = rand() % 100 + 1;
@@ -50,7 +61,7 @@ void def4(){
     }
     printf("\n\n");
 
-    arr1[10] = arr2[0] * 2;
+    arr2[12] = arr1[0] * 2;
     for (int i = 0; i < 10; i++) {
         printf("%d ", arr1[i]);
     }
@@ -60,7 +71,7 @@ void def4(){
     }
     printf("\n\n");
 
-    *(arr1 + 10) = *(arr2)* 2;
+    *(arr2 + 12) = *(arr1)* 2;
     for (int i = 0; i < 10; i++) {
         printf("%d ", arr1[i]);
     }

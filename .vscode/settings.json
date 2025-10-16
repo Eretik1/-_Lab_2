@@ -3,6 +3,8 @@
         "*.page-template": "vue",
         "*.layout-template": "vue",
         "*.vue": "vue",
-        "cmath": "c"
+        "cmath": "c",
+        "algorithm": "c",
+        "format": "c"
     }
 }
