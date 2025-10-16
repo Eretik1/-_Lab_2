@@ -1,14 +1,14 @@
 [
 {
-  "directory": "D:/projects/study/5th semester/C/Lab_2/build",
-  "command": "C:\\msys64\\mingw64\\bin\\cc.exe -I\"D:/projects/study/5th semester/C/Lab_2/include\" -g -o CMakeFiles\\Lab_2.dir\\main.c.obj -c \"D:\\projects\\study\\5th semester\\C\\Lab_2\\main.c\"",
-  "file": "D:\\projects\\study\\5th semester\\C\\Lab_2\\main.c",
+  "directory": "D:/projects/study/5th_semester/C/Lab_2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -ID:/projects/study/5th_semester/C/Lab_2/include -g -o CMakeFiles\\Lab_2.dir\\main.c.obj -c D:\\projects\\study\\5th_semester\\C\\Lab_2\\main.c",
+  "file": "D:\\projects\\study\\5th_semester\\C\\Lab_2\\main.c",
   "output": "CMakeFiles\\Lab_2.dir\\main.c.obj"
 },
 {
-  "directory": "D:/projects/study/5th semester/C/Lab_2/build",
-  "command": "C:\\msys64\\mingw64\\bin\\cc.exe -I\"D:/projects/study/5th semester/C/Lab_2/include\" -g -o CMakeFiles\\Lab_2.dir\\src\\def.c.obj -c \"D:\\projects\\study\\5th semester\\C\\Lab_2\\src\\def.c\"",
-  "file": "D:\\projects\\study\\5th semester\\C\\Lab_2\\src\\def.c",
+  "directory": "D:/projects/study/5th_semester/C/Lab_2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -ID:/projects/study/5th_semester/C/Lab_2/include -g -o CMakeFiles\\Lab_2.dir\\src\\def.c.obj -c D:\\projects\\study\\5th_semester\\C\\Lab_2\\src\\def.c",
+  "file": "D:\\projects\\study\\5th_semester\\C\\Lab_2\\src\\def.c",
   "output": "CMakeFiles\\Lab_2.dir\\src\\def.c.obj"
 }
 ]

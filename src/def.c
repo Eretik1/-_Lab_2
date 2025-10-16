@@ -28,7 +28,8 @@ double def1(double x, double y, double z){
 }
 
 double def2(double x, double y, double z){
-    return x * y * z;
+    double d = sqrt(z * (sqrt(y) * pow(x, 2))) * (log(fabs(x)) - fabs(z-y));
+    return d;
 }
 
 double def3(double x, double y, double z, double (*def)(double x, double y, double z)){
